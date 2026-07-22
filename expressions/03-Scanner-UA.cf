@@ -1,0 +1,11 @@
+(
+lower(http.user_agent) contains "sqlmap"
+or lower(http.user_agent) contains "nuclei"
+or lower(http.user_agent) contains "ffuf"
+or lower(http.user_agent) contains "dirsearch"
+or lower(http.user_agent) contains "gobuster"
+or lower(http.user_agent) contains "feroxbuster"
+or lower(http.user_agent) contains "masscan"
+or lower(http.user_agent) contains "zgrab"
+or lower(http.user_agent) contains "tlm-audit-scanner"
+)

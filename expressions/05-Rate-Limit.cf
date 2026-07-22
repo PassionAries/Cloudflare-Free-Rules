@@ -1,0 +1,12 @@
+not starts_with(http.request.uri.path, "/cdn-cgi/")
+and (
+http.request.uri.path contains ".env"
+or http.request.uri.path contains ".git"
+or http.request.uri.path contains ".aws"
+or http.request.uri.path contains ".ssh"
+or http.request.uri.path contains "phpunit"
+or http.request.uri.path contains "_ignition"
+or http.request.uri.path contains "actuator"
+or http.request.uri.path contains "xmlrpc.php"
+or http.request.uri.path contains "wp-login.php"
+)
